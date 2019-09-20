@@ -5,12 +5,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Logger;
 
 public class ConfigBrowsers {
     public static WebDriver driver;
     private static ListaDeBrowsers.ListaBrowsers listaBrowser;
-
-
 
     public static WebDriver obterDriver(ListaDeBrowsers.ListaBrowsers browser) throws Exception{
         listaBrowser = browser;
