@@ -9,6 +9,7 @@ import org.junit.Assert;
 import paginas.PaginaCarrinho;
 import paginas.PaginaInicial;
 import paginas.Paginas;
+import utils.UtilRelatorio;
 
 public class steps {
     Paginas paginas = new Paginas();
