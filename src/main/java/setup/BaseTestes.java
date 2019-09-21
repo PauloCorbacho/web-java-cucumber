@@ -4,8 +4,6 @@ import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import org.openqa.selenium.WebDriver;
-import utils.UtilRelatorio;
-import utils.Utils;
 
 public class BaseTestes {
 
@@ -23,4 +21,3 @@ public class BaseTestes {
         return driver;
     }
 }
-

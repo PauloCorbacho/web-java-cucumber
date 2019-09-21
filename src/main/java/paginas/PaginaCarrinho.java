@@ -1,11 +1,10 @@
 package paginas;
 
-import elementos.ElementosCarrinho;
-import org.openqa.selenium.WebDriver;
+import elementos.ElementosPaginaCarrinho;
 import org.openqa.selenium.support.PageFactory;
 import setup.BaseTestes;
 
-public class PaginaCarrinho extends ElementosCarrinho {
+public class PaginaCarrinho extends ElementosPaginaCarrinho {
 
     public PaginaCarrinho(){
         driver = BaseTestes.obterDriver();

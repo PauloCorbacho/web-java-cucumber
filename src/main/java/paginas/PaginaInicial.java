@@ -1,7 +1,6 @@
 package paginas;
 
 import elementos.ElementosPaginaInicial;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import setup.BaseTestes;
 
