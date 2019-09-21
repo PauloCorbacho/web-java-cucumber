@@ -2,6 +2,6 @@ package setup;
 
 public class ListaDeBrowsers {
     public enum ListaBrowsers {
-        CHROME, FIREFOX
+        CHROME, FIREFOX, IE
     }
 }

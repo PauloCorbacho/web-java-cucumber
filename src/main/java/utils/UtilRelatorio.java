@@ -32,14 +32,13 @@ public class UtilRelatorio {
         ImageIO.write(image, "png", new File((System.getProperty("user.home") + "\\Desktop\\ImagensProva\\Imagem.png    ")+ "PrintTest.png"));
     }
 
-    public static void gerarRelatorio(String NomeDoRelatorio){
-        ExtentHtmlReporter Reporter = new ExtentHtmlReporter("src/test/java/reports/" + NomeDoRelatorio +".html");
+    public void gerarRelatorio(String NomeDoRelatorio){
+        ExtentHtmlReporter Reporter = new ExtentHtmlReporter("src/reports/" + NomeDoRelatorio +".html");
         ExtentReports extent = new ExtentReports();
         extent.attachReporter(Reporter);
-        ExtentTest logger=extent.createTest("Teste Name");
+        ExtentTest logger=extent.createTest("LoginTest");
         logger.log(Status.INFO, "Teste");
         logger.log(Status.PASS, "Passou o teste! ");
         extent.flush();
     }
 }
-
