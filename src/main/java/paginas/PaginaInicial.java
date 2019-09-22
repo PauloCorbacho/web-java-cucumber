@@ -11,7 +11,7 @@ public class PaginaInicial extends ElementosPaginaInicial {
         PageFactory.initElements(BaseTestes.obterDriver(), this);
     }
     public void selecionarCategoria(String categoria){
-        buttonCategoria.click();
+        botaoCategoria.click();
         categoriaElemento(categoria);
     }
 
@@ -24,8 +24,8 @@ public class PaginaInicial extends ElementosPaginaInicial {
     public void selecionarProdutoEspecifico(String valor) {
         int count = descricaoProduto.size();
         for (int i = 0; i < count; i++) {
-            String value = descricaoProduto.get(i).getText();
-            if (value.contains(valor)) {
+            String nomeProduto = descricaoProduto.get(i).getText();
+            if (nomeProduto.contains(valor)) {
                 adicionarProdutos.get(i).click();
             }
         }
@@ -41,16 +41,16 @@ public class PaginaInicial extends ElementosPaginaInicial {
             try{
                 valor += Double.parseDouble(parts1);
             }catch(NumberFormatException ex){};
-            System.out.println(valor);
         }
         return valor;
     }
+
     public double pegarValorProdutoEspecifico(String valor) {
         double valorDoProduto = 0.00;
         int count = descricaoProduto.size();
         for (int i = 0; i < count; i++) {
-            String value = descricaoProduto.get(i).getText();
-            if (value.contains(valor)) {
+            String nomeProduto = descricaoProduto.get(i).getText();
+            if (nomeProduto.contains(valor)) {
                 String valorDoProdutoString = valorProdutosNaTelaDeCompra.get(i).getText();
                 String parts = valorDoProdutoString.replace("R$ ", "");
                 try{
@@ -61,5 +61,4 @@ public class PaginaInicial extends ElementosPaginaInicial {
         }
         return valorDoProduto;
     }
-
 }

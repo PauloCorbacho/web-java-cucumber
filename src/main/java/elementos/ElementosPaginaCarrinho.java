@@ -23,10 +23,10 @@ public class ElementosPaginaCarrinho extends Utils {
     protected WebElement statusPedido;
 
     @FindBy(xpath = "//*[@class='close-modal sc-jqCOkK ippulb']")
-    protected WebElement fecharMensagemButton;
+    protected WebElement botaoFecharMensagem;
 
     @FindBy(id = "finish-checkout-button")
-    protected WebElement finalizarCompraButton;
+    protected WebElement botaoFinalizarCompra;
 
     @FindBy(id = "subtotal-price")
     protected WebElement valorTotalCarrinho;
