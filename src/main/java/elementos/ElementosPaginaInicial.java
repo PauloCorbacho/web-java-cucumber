@@ -12,7 +12,7 @@ import java.util.List;
 public class ElementosPaginaInicial extends Utils {
 
     @FindBy(id = "open-categories-btn")
-    protected WebElement buttonCategoria;
+    protected WebElement botaoCategoria;
 
     @FindBy(xpath = "//*[@class='sc-EHOje kwbzOF']")
     protected List<WebElement> descricaoProduto;

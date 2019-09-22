@@ -40,7 +40,7 @@ public class StepsFluxoDeCompra {
 
     @And("^o usuario aumenta a quantidade do produto \"([^\"]*)\" em \"([^\"]*)\"$")
     public void oUsuarioAumentaAQuantidadeDoProdutoEm(String produto, int quantidade) throws Throwable {
-        paginaCarrinho.aumentarQuantidadeProdutoNovo(produto, quantidade);
+        paginaCarrinho.aumentarQuantidadeProduto(produto, quantidade);
     }
 
     @When("^o usuario clica no botao finalizar compra$")
@@ -94,7 +94,6 @@ public class StepsFluxoDeCompra {
 
     @Then("^o valor total da compra deve estar correto$")
     public void oValorTotalDaCompraDeveEstarCorreto() {
-        Assert.assertTrue(paginaCarrinho .validarValorDoCarrinho(valorTotal, valorTotalDoCarrinho));
+        Assert.assertTrue(paginaCarrinho.validarValorDoCarrinho(valorTotal, valorTotalDoCarrinho));
     }
-
 }

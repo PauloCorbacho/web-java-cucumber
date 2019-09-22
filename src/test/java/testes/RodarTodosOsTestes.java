@@ -8,10 +8,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = "src/test/java/features/"
         , glue = {""}
         , plugin = { "pretty",
-        "html:target/cucumber-reports/cucumber-pretty",
         "json:target/cucumber-reports/CucumberTestReport.json",
-        "rerun:target/cucumber-reports/rerun.txt",
-        "html:src/test/java/reports/"})
+        "html:target/site/cucumber-pretty",
+        "junit:src/test/java/reports/RelatorioCucumber.xml"})
 
 
 public class RodarTodosOsTestes {

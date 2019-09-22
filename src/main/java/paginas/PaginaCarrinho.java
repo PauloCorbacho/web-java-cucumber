@@ -11,12 +11,12 @@ public class PaginaCarrinho extends ElementosPaginaCarrinho {
         PageFactory.initElements(BaseTestes.obterDriver(), this);
     }
 
-    public void aumentarQuantidadeProdutoNovo(String valor, int quantidade){
+    public void aumentarQuantidadeProduto(String valor, int quantidade){
         int count = listaProdutosNoCarrinho.size();
         for (int i = 0; i < count; i++) {
-            String value = listaProdutosNoCarrinho.get(i).getText();
+            String nomeProduto = listaProdutosNoCarrinho.get(i).getText();
 
-            if (value.contains(valor)) {
+            if (nomeProduto.contains(valor)) {
                 for (int j = 0; j < quantidade; j++) {
                     aumentarQuantidadeProduto.get(i).click();
                 }
@@ -27,9 +27,9 @@ public class PaginaCarrinho extends ElementosPaginaCarrinho {
     public void diminuirQuantidadeProduto(String valor, int quantidade){
         int count = listaProdutosNoCarrinho.size();
         for (int i = 0; i < count; i++) {
-            String value = listaProdutosNoCarrinho.get(i).getText();
+            String nomeProduto = listaProdutosNoCarrinho.get(i).getText();
 
-            if (value.contains(valor)) {
+            if (nomeProduto.contains(valor)) {
                 for (int j = 0; j < quantidade; j++) {
                     diminuirQuantidadeProduto.get(i).click();
                 }
@@ -49,23 +49,23 @@ public class PaginaCarrinho extends ElementosPaginaCarrinho {
     }
 
     public boolean validarValorDoCarrinho(double valordosProdutos,double valorTotalNoCarrinho){
-        boolean value;
+        boolean auxBoolean;
         if(valordosProdutos == valorTotalNoCarrinho){
-            value = true;
-        }else value = false;
-        return value;
+            auxBoolean = true;
+        }else auxBoolean = false;
+        return auxBoolean;
     }
 
-    public double totalCarrinho(double SomaProdutos, Double valorProduto, int quantidade){
+    public double totalCarrinho(double somaProdutos, Double valorProduto, int quantidade){
         Double total = 0.00;
         Double valorProdutoLocal = valorProduto;
-        total = (SomaProdutos + valorProdutoLocal * quantidade);
+        total = (somaProdutos + valorProdutoLocal * quantidade);
         return total;
     }
 
     public void finalizarCompra(){
 
-        finalizarCompraButton.click();
+        botaoFinalizarCompra.click();
     }
 
     public String validaStatusCompra(){
@@ -75,6 +75,6 @@ public class PaginaCarrinho extends ElementosPaginaCarrinho {
 
     public void fecharMensagemStatusPedido(){
 
-        fecharMensagemButton.click();
+        botaoFecharMensagem.click();
     }
 }
