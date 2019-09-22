@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="36.868053">
+<testcase classname="compras no site 4all" name="adicionando produtos e validando mensagem de realizado com sucesso" time="18.638607">
+<system-out><![CDATA[Given o usuario esta acessando a seguinte pagina "".........................passed
+And o usuario seleciona a seguinte categoria "Doces"........................passed
+And o usuario adiciona todos os produtos disponiveis ao carrinho............passed
+And o usuario seleciona a seguinte categoria "Todos"........................passed
+And o usuario esta acessando a seguinte pagina "checkout"...................passed
+And o usuario aumenta a quantidade do produto "Brigadeiro" em "4"...........passed
+When o usuario clica no botao finalizar compra..............................passed
+Then a mensagem de Pedido realizado com sucesso deve ser apresentada........passed
+And o usuario fecha a modal.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="compras no site 4all" name="adicionar produto, alterar sua quantidade e validar a mensagem pedido realizado com sucesso" time="18.229446">
+<system-out><![CDATA[Given o usuario esta acessando a seguinte pagina "".........................passed
+And o usuario seleciona a seguinte categoria "Bebidas"......................passed
+And o usuario adiciona todos os produtos disponiveis ao carrinho............passed
+And o usuario tem a soma do valor dos produtos..............................passed
+And o usuario seleciona a seguinte categoria "Todos"........................passed
+And o usuario seleciona o produto "Rissole".................................passed
+And o usuario tem o valor do produto "Rissole"..............................passed
+And o usuario esta acessando a seguinte pagina "checkout"...................passed
+And o usuario aumenta a quantidade do produto "Rissole" em "9"..............passed
+And o usuario diminui a quantidade do produto "Rissole" em "5"..............passed
+And o usuario tem a soma dos produtos com suas quantidades..................passed
+When o usuario tem o valor total do carrinho................................passed
+Then o valor total da compra deve estar correto.............................passed
+And o usuario clica no botao finalizar compra...............................passed
+And a mensagem de Pedido realizado com sucesso deve ser apresentada.........passed
+And o usuario fecha a modal.................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
