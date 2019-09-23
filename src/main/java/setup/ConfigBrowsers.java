@@ -29,7 +29,7 @@ public class ConfigBrowsers {
                 driver = new InternetExplorerDriver();
                 break;
             default:
-                System.out.println("browser : " + listaBrowser + " nevegaro não encontrado, usaremos o Firefox para rodar os testes!");
+                System.out.println("browser : " + listaBrowser + " nevegador não encontrado, usaremos o Firefox para rodar os testes!");
                 driver = new FirefoxDriver();
         }
         driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
