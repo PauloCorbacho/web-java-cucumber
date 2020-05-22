@@ -4,18 +4,21 @@ Test Automation framework for Web applications using Java + Cucumber
 This Test Automation Framework was developed using the following technologies:
 
 ### Technologies:
-Java > Maven > Junit   
-Cucumber BDD > Selenium  
-Extent Report  
+* Java
+* Maven 
+* Junit   
+* Cucumber BDD 
+* Selenium  
+* Extent Report  
 
 ### Prerequisites
 
 * IDE java  
-SDK
-Cucumber plugin
-Chrome  
-Firefox  
-Internet explorer  
+* SDK
+* Cucumber plugin
+* Chrome  
+* Firefox  
+* Internet explorer  
 
 ### Installing 
 
