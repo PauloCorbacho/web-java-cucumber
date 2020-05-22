@@ -1,38 +1,36 @@
-# Prova 4all
+# UI 
 
-Projeto de automação de testes.
-
-### Tecnologias:
+### Technologies:
 Java > Maven > Junit   
 Cucumber BDD > Selenium  
 Extent Report  
 
-### Pré-requisitos
+### Prerequisites
 
 IDE java  
 Chrome  
 Firefox  
 Internet explorer  
 
-### Instalando
+### Installing 
 
-Para utilizar o projeto, é necessário clonar o repositorio no ambiente local e atualizar as dependências.
+To use the project, it is necessary to clone the repository in the local environment and update the dependencies.
 
-### Rodando os testes
+### Running the tests
 
-Para rodar os testes basta rodar a classe RodarTodosOsTestes  
-src/test/java/testes  
+To run the tests just run the class Run AllTests
+src / test / java / tests
 
-### Padrão de testes
+### testing standard
 
-Os testes deste projeto realizam validações para um fluxo de compra.
-Foi utilizado o conceito BDD para criação dos steps a partir das features com os fluxos. 
+The tests of this project perform validations for a purchase flow.
+The BDD concept was used to create the steps from the features with the flows.
 
 ### Build
 
 * [Maven](https://maven.apache.org/) - Dependency Management
 
-### Versionamento
+### Versioning
 
 https://github.com 
 
