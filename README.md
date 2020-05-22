@@ -10,7 +10,7 @@ Extent Report
 
 ### Prerequisites
 
-IDE java  
+* IDE java  
 SDK
 Cucumber plugin
 Chrome  
