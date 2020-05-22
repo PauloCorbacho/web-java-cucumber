@@ -1,4 +1,7 @@
-# UI 
+#web-java-cucumber
+Test Automation framework for Web applications using Java + Cucumber
+
+This Test Automation Framework was developed using the following technologies:
 
 ### Technologies:
 Java > Maven > Junit   
@@ -8,6 +11,8 @@ Extent Report
 ### Prerequisites
 
 IDE java  
+SDK
+Cucumber plugin
 Chrome  
 Firefox  
 Internet explorer  
