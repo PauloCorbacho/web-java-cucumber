@@ -29,7 +29,7 @@ To use the project, it is necessary to clone the repository in the local environ
 To run the tests just run the class Run AllTests
 src / test / java / tests
 
-### testing standard
+### Testing standard
 
 The tests of this project perform validations for a purchase flow.
 The BDD concept was used to create the steps from the features with the flows.
